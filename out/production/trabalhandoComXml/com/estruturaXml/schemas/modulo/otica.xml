@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+    <pontoDeVenda>OTICA_RECIFE
+        <funcionario>MAXWELL</funcionario>
+        <horaAberturaCaixa>08:00</horaAberturaCaixa>
+        <turno>MANHÃ</turno>
+        <vlFundoCaixa>450.00</vlFundoCaixa>
+        <listaDeProdutos>
+            <produto>
+                <item>100</item>
+                <descricao>Oculos de Sol </descricao>
+                <valor>20000</valor>
+                <observacao> ta barato</observacao>
+            </produto>
+            <produto>
+                <item>101</item>
+                <descricao>Oculos Quadrado Maculino</descricao>
+                <valor>870</valor>
+                <observacao> made in Brasil</observacao>
+            </produto>
+            <produto>
+                <item>999</item>
+                <descricao>Oculos Resto de Estoque Promoção TOP</descricao>
+                <valor>10</valor>
+                <observacao> NÃO DEVOLVEMOS MERCADORIAS, AGREÇO A PREFERENCIA!</observacao>
+            </produto>
+        </listaDeProdutos>
+    </pontoDeVenda>
+
