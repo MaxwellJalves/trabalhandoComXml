@@ -7,7 +7,12 @@ public class Cliente {
     private int numero;
     private String bairro;
 
-    public Cliente(){ }
+    public Cliente(String nomeCli, String ruaCli, Integer numero, String bairro){
+        this.nome = nomeCli;
+        this.endereco = ruaCli;
+        this.numero = numero;
+        this.bairro = bairro;
+    }
 
     public Cliente(long id, String nome, String endereco, int numero, String bairro) {
         this.id = id;

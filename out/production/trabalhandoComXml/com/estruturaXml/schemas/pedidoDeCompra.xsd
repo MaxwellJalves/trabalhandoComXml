@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apelido:schema xmlns:apelido="http://www.w3.org/2001/XMLSchema">
+    <apelido:element name="pedidoDeCompra">
+        <apelido:complexType>
+            <apelido:sequence>
+                <apelido:element name="header">
+                    <apelido:complexType>
+                        <apelido:sequence>
+                            <apelido:element name="identificador" type="apelido:integer"/>
+                            <apelido:element name="codigoLojaParceira" type="apelido:integer"/>
+                            <apelido:element name="codigoDoCliente" type="apelido:integer"/>
+                        </apelido:sequence>
+                    </apelido:complexType>
+                </apelido:element>
+                <apelido:element name="body">
+                    <apelido:complexType>
+                        <apelido:sequence>
+                            <apelido:element name="pedidos">
+                                <apelido:complexType>
+                                    <apelido:sequence>
+                                        <apelido:element name="produto">
+                                            <apelido:complexType>
+                                                <apelido:sequence>
+                                                    <apelido:element name="codigo" type="apelido:int"/>
+                                                    <apelido:element name="nome" type="apelido:string"/>
+                                                    <apelido:element name="valor" type="apelido:double"/>
+                                                    <apelido:element name="quantidade" type="apelido:double"/>
+                                                </apelido:sequence>
+                                            </apelido:complexType>
+                                        </apelido:element>
+                                    </apelido:sequence>
+                                </apelido:complexType>
+                            </apelido:element>
+                        </apelido:sequence>
+                    </apelido:complexType>
+                </apelido:element>
+                <apelido:element name="dadosDoCliente">
+                    <apelido:complexType>
+                        <apelido:sequence>
+                            <apelido:element  name="nome" type="apelido:string"/>
+                            <apelido:element  name="endereco" type="apelido:string"/>
+                            <apelido:element  name="numero"   type="apelido:int"/>
+                            <apelido:element  name="bairro"   type="apelido:string"/>
+                        </apelido:sequence>
+                    </apelido:complexType>
+                </apelido:element>
+            </apelido:sequence>
+        </apelido:complexType>
+    </apelido:element>
+
+</apelido:schema>

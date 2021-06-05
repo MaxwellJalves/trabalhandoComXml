@@ -23,7 +23,7 @@ public class Message {
      * Retorna todos os dados utilizado na regra de negócio para o procedimento*/
     public static void getItensPedido(){
         for(Produto p : Produto.getProduto()){
-            System.out.println("Código do Produto : "+p.getCodigo());
+            System.out.println("\nCódigo do Produto : "+p.getCodigo());
             System.out.println("Descrição         :"+ p.getDescricao());
             System.out.println("Valor Unitario    :"+ p.getValor());
             String observacao = p.getObservacaoItem() != null ? "Observação do produto:" + p.getObservacaoItem() : "";

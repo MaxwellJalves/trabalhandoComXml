@@ -40,6 +40,7 @@ private int codigo;
 
     }
 
+
     public double getQuantidade() {
         return quantidade;
     }
@@ -49,11 +50,11 @@ private int codigo;
         }
 
     public String getDescricao() {
-        return descricao;
+        return descricao.toUpperCase();
     }
 
     public BigDecimal getValor() {
-        return valor;
+        return valor.setScale(2);
     }
 
     public String getObservacaoItem() {
