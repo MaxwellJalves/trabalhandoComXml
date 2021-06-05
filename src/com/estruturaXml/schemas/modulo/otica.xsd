@@ -1,0 +1,10 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="pontoDeVenda">
+      <complexType>
+          <attribute name="funcionario" type="string"></attribute>
+          <attribute name="horaAberturaCaixa" type="date"></attribute>
+          <attribute name="turno" type="string"></attribute>
+          <attribute name="vlFundoCaixa" type="decimal"></attribute>
+      </complexType>
+    </element>
+</schema>
