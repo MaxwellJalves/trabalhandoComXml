@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"  ?>
-    <pontoDeVenda>OTICA_RECIFE
+    <pontoDeVenda xsi:noNamespaceSchemaLocation="otica.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >OTICA_RECIFE
         <funcionario>MAXWELL</funcionario>
         <horaAberturaCaixa>08:00</horaAberturaCaixa>
         <turno>MANHÃ</turno>
