@@ -60,25 +60,3 @@ public class Pedido {
                 '}';
     }
 }
-
-/*    <header>
-        <identificador>1</identificador>
-        <codigoEmpresa>10</codigoEmpresa>
-        <codigoDoCliente>1020</codigoDoCliente>
-    </header>
-    <body>
-     <pedidos>
-         <produto>
-             <codigo>1020</codigo>
-             <nome>COCA COLA</nome>
-             <valor>5.20</valor>
-             <quantidade>2</quantidade>
-         </produto>
-     </pedidos>
-     <dadosDoCliente>
-         <nome>MAXWELL</nome>
-         <endereco>Rua B</endereco>
-         <numero>12</numero>
-         <bairro>CENTRO</bairro>
-     </dadosDoCliente>
-    </body>*/
