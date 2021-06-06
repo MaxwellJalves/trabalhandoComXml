@@ -18,7 +18,7 @@
                             <apelido:element name="pedidos">
                                 <apelido:complexType>
                                     <apelido:sequence>
-                                        <apelido:element name="produto">
+                                        <apelido:element name="produto" maxOccurs="unbounded">
                                             <apelido:complexType>
                                                 <apelido:sequence>
                                                     <apelido:element name="codigo" type="apelido:int"/>
@@ -31,16 +31,16 @@
                                     </apelido:sequence>
                                 </apelido:complexType>
                             </apelido:element>
-                        </apelido:sequence>
-                    </apelido:complexType>
-                </apelido:element>
-                <apelido:element name="dadosDoCliente">
-                    <apelido:complexType>
-                        <apelido:sequence>
-                            <apelido:element  name="nome" type="apelido:string"/>
-                            <apelido:element  name="endereco" type="apelido:string"/>
-                            <apelido:element  name="numero"   type="apelido:int"/>
-                            <apelido:element  name="bairro"   type="apelido:string"/>
+                            <apelido:element name="dadosDoCliente" maxOccurs="unbounded">
+                                <apelido:complexType>
+                                    <apelido:sequence>
+                                        <apelido:element  name="nome"     type="apelido:string"/>
+                                        <apelido:element  name="endereco" type="apelido:string"/>
+                                        <apelido:element  name="numero"   type="apelido:int"/>
+                                        <apelido:element  name="bairro"   type="apelido:string"/>
+                                    </apelido:sequence>
+                                </apelido:complexType>
+                            </apelido:element>
                         </apelido:sequence>
                     </apelido:complexType>
                 </apelido:element>
