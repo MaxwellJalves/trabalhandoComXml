@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema">
-    <element name="formaDePagamento" >
-        <complexType>
-            <sequence>
-                <element name="tipo" type="string"/>
-            </sequence>
-        </complexType>
-    </element>
-</schema>
+<max:schema xmlns:max="http://www.w3.org/2001/XMLSchema">
+    <max:element name="formaDePagamento" >
+        <max:complexType>
+            <max:sequence>
+                <max:element name="tipo" type="max:string"/>
+            </max:sequence>
+        </max:complexType>
+    </max:element>
+</max:schema>
