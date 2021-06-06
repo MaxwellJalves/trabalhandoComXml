@@ -1,10 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema">
     <element name="pontoDeVenda">
       <complexType>
-          <attribute name="funcionario" type="string"></attribute>
-          <attribute name="horaAberturaCaixa" type="date"></attribute>
-          <attribute name="turno" type="string"></attribute>
-          <attribute name="vlFundoCaixa" type="decimal"></attribute>
+          <sequence>
+              <element name="funcionario" type="string"/>
+              <element name="horaAberturaCaixa" type="date"/>
+              <element name="turno" type="string"/>
+              <element name="vlFundCaixa" type="decimal"/>
+              <element name = "listaDeProdutos">
+                  <complexType>
+                      <sequence>
+                          <element name="produto" maxOccurs="unbounded">
+                              <complexType>
+                                  <sequence>
+                                      <element name="item" type="int"/>
+                                      <element name="descricao" type="string"/>
+                                      <element name="valor" type="double"/>
+                                      <element name="observacao" type="string"/>
+                                  </sequence>
+                              </complexType>
+                          </element>
+                      </sequence>
+                  </complexType>
+              </element>
+          </sequence>
       </complexType>
     </element>
+
+
 </schema>
+

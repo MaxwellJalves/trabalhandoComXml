@@ -19,6 +19,9 @@ public static void main(String[] args) throws Exception{
     DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
     DocumentBuilder dBuilder = factory.newDocumentBuilder();
     Document doc = dBuilder.parse("src/com/estruturaXml/schemas/modulo/otica.xml");
+    factory.setValidating(true);
+    factory.setNamespaceAware(true);
+    factory.setAttribute("http://java.sun.com/xml/jaxp/properties/schemaLanguage","http://www.w3.org/2001/XMLSchema");
 
     Element documento = doc.getDocumentElement();
 
