@@ -43,7 +43,5 @@ public static void main(String[] args) throws Exception{
         Message.getItensPedido();
         System.out.println("\n######-------Agradecemos a preferencia ------######\n");
 
-
-
-    }
+}
 }
