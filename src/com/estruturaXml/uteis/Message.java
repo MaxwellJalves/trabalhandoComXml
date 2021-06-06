@@ -19,8 +19,11 @@ public class Message {
     }
 
     /**
+     * <em> Retorna a lista de itens do pedido</em>
      * @Author Maxwell.costa
-     * Retorna todos os dados utilizado na regra de negócio para o procedimento*/
+     * Retorna todos os dados utilizado na regra de negócio para o procedimento
+     */
+
     public static void getItensPedido(){
         for(Produto p : Produto.getProduto()){
             System.out.println("\nCódigo do Produto : "+p.getCodigo());

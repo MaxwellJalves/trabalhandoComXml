@@ -6,7 +6,6 @@ import com.estruturaXml.uteis.Location;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 
@@ -21,11 +20,14 @@ public class FormaDePagamentoXmlReader {
         SAXParserFactory reader =  SAXParserFactory.newInstance();
         SAXParser analyzer = reader.newSAXParser();
 
-     // File fileLocation = new File(Location.ROUTE_FORMA_DE_PAGAMENTO_XML);
         InputStream input = new FileInputStream(Location.ROUTE_FORMA_DE_PAGAMENTO_XML);
 
         FormaDePagamento pagamento = new FormaDePagamento();
+
         analyzer.parse(input,pagamento);
+
+         pagamento.getFormaPagamento().forEach(e -> System.out.println(e));
+         System.out.println("Coletando descrição do pagamento ->\nUtilizar essa abordagem quando retornar apenas um elemento: retorno [".concat(pagamento.getDescricao()).concat("]"));
     }
 
 }

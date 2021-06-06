@@ -3,7 +3,13 @@
     <max:element name="formaDePagamento" >
         <max:complexType>
             <max:sequence>
-                <max:element name="tipo" type="max:string"/>
+                <max:element name="pagamentos" maxOccurs="unbounded">
+                    <max:complexType>
+                        <max:sequence>
+                            <max:element name="tipo" type="max:string" maxOccurs="unbounded"/>
+                        </max:sequence>
+                    </max:complexType>
+                </max:element>
             </max:sequence>
         </max:complexType>
     </max:element>

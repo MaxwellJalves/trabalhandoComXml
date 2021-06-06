@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <formaDePagamento xsi:noNamespaceSchemaLocation="formaDePagamento.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <tipo>credito</tipo>  <!--DINHEIRO,CARTAO CREDITO,CARTAO DEBITO-->
+   <pagamentos>
+       <tipo>dinheiro</tipo>
+       <tipo>debito</tipo>
+       <tipo>credito</tipo>
+   </pagamentos>
 </formaDePagamento>
