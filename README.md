@@ -7,7 +7,8 @@ Referencias utilizada para o estudo:
 
 https://www.ibm.com/docs/pt-br/was-nd/8.5.5?topic=services-wsdl
 
-# SAXParserFactory 
+#  SAX - Simple API for XML
+- ### Classe SAXParserFactory 
 No java 11 a Classe XMLReaderFactory foi Descontinuada e como sugestão o site da oracle recomenda a utilização do  <b>SAXParserFactory </b>
 REF : https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#newInstance()
 
