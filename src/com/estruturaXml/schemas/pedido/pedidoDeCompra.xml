@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<pedidoDeCompra  xsi:noNamespaceSchemaLocation="pedidoDeCompra.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<pedidoDeCompra xsi:noNamespaceSchemaLocation="pedidoDeCompra.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <header>
         <identificador>1</identificador>
         <codigoLojaParceira>10</codigoLojaParceira>

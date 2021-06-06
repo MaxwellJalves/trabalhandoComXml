@@ -18,7 +18,7 @@ public class PedidoDeCompraMain {
         factory.setNamespaceAware(true);
         factory.setAttribute("http://java.sun.com/xml/jaxp/properties/schemaLanguage","http://www.w3.org/2001/XMLSchema");
         DocumentBuilder builder = factory.newDocumentBuilder();
-        Document doc = builder.parse("src/com/estruturaXml/schemas/pedidoDeCompra.xml");
+        Document doc = builder.parse("src/com/estruturaXml/schemas/pedido/pedidoDeCompra.xml");
 
 //        NodeList lista = doc.getElementsByTagName("pedidoDeCompra");
 //        System.out.println(lista.item(0).getTextContent());
